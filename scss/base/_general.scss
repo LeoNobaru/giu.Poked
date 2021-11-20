@@ -1,0 +1,48 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+ul li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.body {
+    background-image: url(../../src/multimedia/img/background.jpg);
+    object-fit: cover;
+}
+
+.irArriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 5vh;
+    width: 5vh;
+    bottom: 4vh;
+    right: 3vw;
+    border-radius: 50%;
+    border: 1px solid #fff5;
+    background-color: nth($colors, 1);
+    transition: all 1s;
+    z-index: 10000;
+    color: #fff;
+    font-size: 2rem;
+    i {
+        font-size: 1.5rem;
+    }
+}

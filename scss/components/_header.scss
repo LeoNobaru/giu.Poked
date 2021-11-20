@@ -1,0 +1,133 @@
+/* Header */
+
+header {
+    background: nth($background-colors, 1);
+    opacity: 0.95;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 38px;
+    z-index: 1000;
+    nav {
+        display: flex;
+        justify-content: left;
+        align-items: top;
+        width: 100%;
+        height: 100%;
+        div {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0 0 8px;
+        }
+        .marca {
+            h1 {
+                font-size: 1.5rem;
+                color: nth($colors, 5);
+                position: relative;
+            }
+            a {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: nth($colors, 5 );
+                position: relative;
+            }
+            a::before {
+                position: absolute;
+                content: attr(data-text);
+                text-shadow: 0px 0px 20px nth($colors , 5 );
+                filter: blur(10px) brightness(0);
+                animation: flicker 3s linear forwards;
+                animation-delay: 1s;
+            }        
+        }
+        .nav-container-mobile {
+            display: block;
+            height: 100%;
+            margin: 0 0 0 auto;
+            padding: 0;
+            z-index: 200000;
+            .nav-menu-mobile {
+                color: darken(nth($colors, 5),8%);
+                font-size: 1.5rem;
+                margin: 7px 10px 0 0;
+                &:hover {
+                    color: nth($colors, 5);
+                }
+                .nav-div-mobile {
+                    height: 75vh;
+                    color: #fff;
+                    background: nth($background-colors, 3);
+                    display: none;
+                    flex-direction: column;
+                    margin-left: -75vw;
+                    margin-right: -10px;
+                    justify-content: space-evenly;
+                    margin-top: 7px;
+                    li {
+                        a {
+                            color: #fffa;
+                            text-decoration: none;
+                            &:hover {
+                                border-bottom: 2px solid #fff;
+                                color: #fff;
+                            }
+                        }
+                        .submenu-display-mobile {
+                            color: #fffa;
+                            &:hover {
+                                color: #fff;
+                            }
+                            &:hover > p {
+                                color: #fff;
+                            }
+                            p {
+                                display: inline;
+                                color: #fffa;
+                            }
+                            .submenu-mobile {
+                                display: none;
+                                flex-direction: column;
+                                font-size: 1rem;
+                                text-align: center;
+                                align-items: center;
+                                padding-left: 0;
+                                width: 100%;
+                                height: 350px;
+                                justify-content: space-evenly;
+
+                                li {
+                                    margin-top: 7%;
+                                    a {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                            &:hover > .submenu-mobile {
+                                display: flex;
+                            }
+                            &:hover {
+                                margin-left: 11.5px;
+                            }
+                        }
+                    }
+
+                }
+            &:hover > .nav-div-mobile {
+                 display: flex;
+            }
+            }
+        }
+        .nav-desktop {
+            display: none;
+            width: 100%;
+            .nav-container {
+                display: flex;
+                padding: 0;
+                justify-content: space-between;
+                
+            }
+        }
+    }
+}
