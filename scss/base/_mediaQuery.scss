@@ -132,7 +132,8 @@
 }
 
 @media screen and (min-width:1069px) and (max-width:1440px) {
-    header {
+    header {  
+        background: lighten(nth($background-colors, 1),2%);
         height: 80px;
         padding: 0 5vw;
         nav {
@@ -150,6 +151,13 @@
             .nav-desktop {
                 display: flex;
             }
+        }
+    }
+    main {
+        background-image: radial-gradient(#3604386e,#000000), url(../src/multimedia/img/background.jpg);
+        object-fit: scale-down;
+        .section-carousel {
+            padding-top: 80px;
         }
     }
     .main-contacto {
@@ -190,6 +198,22 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-height:450px) {
     .irArriba {

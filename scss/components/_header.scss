@@ -123,13 +123,66 @@ header {
             }
         }
         .nav-desktop {
+            height: 100%;
             display: none;
+            align-items: center;
             width: 100%;
-            .nav-container {
+            .nav-container-ul {
+                margin: 0;
                 display: flex;
-                padding: 0;
+                position: absolute;
+                width: 75vw;
+                left: 25vw;
                 justify-content: space-between;
-                
+                align-items: center;
+                padding: 0 15vw;
+                .nav-li {
+                    font-size: 24px;
+                    font-style: bold;
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    a {
+                        color: nth($colors, 6);
+                        &:hover {
+                            text-shadow: 0px 5px 20px nth($colors, 6);
+                            padding: 0;
+                            filter: brightness(2);
+                            border-bottom: 2px solid nth($colors, 5);
+                        }
+                    }
+                    .nav-container-submenu {
+                        background: lighten(nth($background-colors, 1),1%);
+                        width: 17vw;
+                        position: absolute;
+                        display: none;
+                        margin-top: 37.5px;
+                        padding-top: 25px;
+                        z-index: 100;
+                        padding-left: 0;
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                            a {
+                                font-size: 20px;
+                                display: flex;
+                                margin: 7px auto;
+                                padding: 2px 0 0 0;
+                                &:hover {
+                                    text-shadow: 0px 0px 20px nth($colors, 5);
+                                    padding: 0;
+                                    filter: brightness(2);
+                                    border-bottom: 2px solid nth($colors, 5);
+                                }
+                            }
+                        }
+                    }
+                }
+                .submenu-hover {
+                    &:hover > .nav-container-submenu {
+                        display: block;
+                    }
+                }
             }
         }
     }

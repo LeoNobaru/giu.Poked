@@ -224,13 +224,65 @@ header nav .nav-container-mobile .nav-menu-mobile:hover > .nav-div-mobile {
   display: flex;
 }
 header nav .nav-desktop {
+  height: 100%;
   display: none;
+  align-items: center;
   width: 100%;
 }
-header nav .nav-desktop .nav-container {
+header nav .nav-desktop .nav-container-ul {
+  margin: 0;
   display: flex;
-  padding: 0;
+  position: absolute;
+  width: 75vw;
+  left: 25vw;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 15vw;
+}
+header nav .nav-desktop .nav-container-ul .nav-li {
+  font-size: 24px;
+  font-style: bold;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+header nav .nav-desktop .nav-container-ul .nav-li a {
+  color: #D6F9FF;
+}
+header nav .nav-desktop .nav-container-ul .nav-li a:hover {
+  text-shadow: 0px 5px 20px #D6F9FF;
+  padding: 0;
+  filter: brightness(2);
+  border-bottom: 2px solid #00EEFF;
+}
+header nav .nav-desktop .nav-container-ul .nav-li .nav-container-submenu {
+  background: #0e0025;
+  width: 17vw;
+  position: absolute;
+  display: none;
+  margin-top: 37.5px;
+  padding-top: 25px;
+  z-index: 100;
+  padding-left: 0;
+}
+header nav .nav-desktop .nav-container-ul .nav-li .nav-container-submenu li {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .nav-desktop .nav-container-ul .nav-li .nav-container-submenu li a {
+  font-size: 20px;
+  display: flex;
+  margin: 7px auto;
+  padding: 2px 0 0 0;
+}
+header nav .nav-desktop .nav-container-ul .nav-li .nav-container-submenu li a:hover {
+  text-shadow: 0px 0px 20px #00EEFF;
+  padding: 0;
+  filter: brightness(2);
+  border-bottom: 2px solid #00EEFF;
+}
+header nav .nav-desktop .nav-container-ul .submenu-hover:hover > .nav-container-submenu {
+  display: block;
 }
 
 /* Main Index */
@@ -628,6 +680,7 @@ footer .copyright p {
 }
 @media screen and (min-width: 1069px) and (max-width: 1440px) {
   header {
+    background: #10002a;
     height: 80px;
     padding: 0 5vw;
   }
@@ -642,6 +695,14 @@ footer .copyright p {
   }
   header nav .nav-desktop {
     display: flex;
+  }
+
+  main {
+    background-image: radial-gradient(#3604386e, #000000), url(../src/multimedia/img/background.jpg);
+    object-fit: scale-down;
+  }
+  main .section-carousel {
+    padding-top: 80px;
   }
 
   .main-contacto {
