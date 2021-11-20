@@ -332,6 +332,7 @@ main .grid-container-pF .pF-info .accordion .accordion-item div div p {
   padding-top: 38px;
 }
 .main-contacto .grid-container-contacto div h2 {
+  text-align: center;
   margin-top: 20px;
   font-size: 1.5rem;
   color: #D6F9FF;
@@ -698,6 +699,10 @@ footer .copyright p {
   }
   header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile li .submenu-display-mobile {
     display: none;
+  }
+
+  .main-diseños .info-diseños div i ul {
+    height: 60vh;
   }
 }
 
