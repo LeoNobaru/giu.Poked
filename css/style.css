@@ -173,6 +173,9 @@ header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile {
   justify-content: space-evenly;
   margin-top: 7px;
 }
+header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile .submenu-display-mobile-h {
+  display: none;
+}
 header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile li a {
   color: #fffa;
   text-decoration: none;
@@ -525,7 +528,7 @@ footer .copyright p {
   header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile {
     background-color: #000c;
     height: 70vh;
-    margin-left: -70vw;
+    margin-left: -60vw;
     margin-right: -6vw;
   }
   header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile li ul {
@@ -572,6 +575,7 @@ footer .copyright p {
     object-fit: cover;
     border-radius: 3%;
     border: inset #D6F9FF;
+    max-height: 70vh;
   }
   .main-diseños .grid-container-diseños .grid-item-diseños img:hover {
     transform: scale(1.1);
@@ -667,6 +671,33 @@ footer .copyright p {
     transform: scale(1.3);
     z-index: 20000;
     transition: 0.5s;
+  }
+}
+@media screen and (max-height: 450px) {
+  .irArriba {
+    height: 10vh;
+    width: 10vh;
+  }
+
+  header {
+    padding: 0 3vw;
+    height: 50px;
+  }
+  header nav .nav-container-mobile .nav-menu-mobile {
+    margin-top: 13px;
+  }
+  header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile {
+    background-color: #000c;
+    max-height: 400px;
+    margin-left: -40vw;
+    margin-right: -6vw;
+    justify-content: space-around;
+  }
+  header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile .submenu-display-mobile-h {
+    display: block;
+  }
+  header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile li .submenu-display-mobile {
+    display: none;
   }
 }
 

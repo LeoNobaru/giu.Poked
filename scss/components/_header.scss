@@ -65,6 +65,9 @@ header {
                     margin-right: -10px;
                     justify-content: space-evenly;
                     margin-top: 7px;
+                    .submenu-display-mobile-h {
+                        display: none;
+                    }
                     li {
                         a {
                             color: #fffa;
