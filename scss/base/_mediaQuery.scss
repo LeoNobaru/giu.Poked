@@ -160,6 +160,42 @@
         object-fit: scale-down;
         .section-carousel {
             padding-top: 80px;
+            .carousel {
+                background: #010002;
+                height: 92vh;
+                div {
+                    .carousel-item {
+                        height: 100%;
+                        margin-top: -8vh;       
+                        .carousel-caption {
+                            h2 {
+                                color: #fff;
+                                font-size: 3rem;
+                                margin: -8vh 0 0 0;
+                                text-shadow: 0px 0px 20px var(--var-color);
+                                filter: blur(0.5px) brightness(1);
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 1.5rem;
+                                text-shadow: 0px 0px 20px var(--var-color);
+                                filter: blur(0.5px) brightness(1);
+                            }
+                        }
+                        img{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .carousel-inner {
+                    height: 100%;
+                }
+                .carousel-indicators {
+                    button {
+                        margin-top: -8vh;
+                    }
+                }
+            }
         }
 
         .grid-container-sN {
@@ -220,7 +256,7 @@
                 img {
                     object-fit: cover;
                     width: 80%;
-                    height: 90%;
+                    height: 85%;
                     border: inset nth($colors, 6);
                 }
             }
@@ -338,6 +374,11 @@
                     margin: auto 0;
                 }
             }
+        }
+        .copyright {
+            display: flex;
+            padding: 10px 5vw;
+            justify-content: space-between;
         }
     }
 }
@@ -371,6 +412,42 @@
         object-fit: scale-down;
         .section-carousel {
             padding-top: 80px;
+            .carousel {
+                background: #010002;
+                height: 92vh;
+                div {
+                    .carousel-item {
+                        height: 100%;
+                        margin-top: -8vh;       
+                        .carousel-caption {
+                            h2 {
+                                color: #fff;
+                                font-size: 3rem;
+                                margin: -8vh 0 0 0;
+                                text-shadow: 0px 0px 20px var(--var-color);
+                                filter: blur(0.5px) brightness(1);
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 1.5rem;
+                                text-shadow: 0px 0px 20px var(--var-color);
+                                filter: blur(0.5px) brightness(1);
+                            }
+                        }
+                        img{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .carousel-inner {
+                    height: 100%;
+                }
+                .carousel-indicators {
+                    button {
+                        margin-top: -8vh;
+                    }
+                }
+            }
         }
 
         .grid-container-sN {
@@ -387,7 +464,7 @@
                 align-items: center;
                 img {
                     object-fit: cover;
-                    width: 80%;
+                    width: 60%;
                     height: 90%;
                     border: inset nth($colors, 6);
                 }
@@ -402,7 +479,7 @@
                 }
                 p {
                     color: #fffe;
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                 }
             }
             .grid-item-sN:first-child {
@@ -430,7 +507,7 @@
                 img {
                     object-fit: cover;
                     width: 80%;
-                    height: 90%;
+                    height: 75%;
                     border: inset nth($colors, 6);
                 }
             }
@@ -446,7 +523,7 @@
                     .accordion-item {
                         h4 {
                             .accordion-button {
-                                font-size: 1.5rem;
+                                font-size: 1.4rem;
                             }
                         }
                         div {
@@ -549,6 +626,11 @@
                 }
             }
         }
+        .copyright {
+            display: flex;
+            padding: 10px 5vw;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -556,7 +638,7 @@
 
 
 
-
+/* Falta Celular en horizontal */
 
 @media screen and (max-height:450px) {
     .irArriba {
@@ -589,7 +671,47 @@
             }
         }
     }
-
+    main {
+        .section-carousel {
+            padding-top: 50px;
+            .carousel {
+                background: #010002;
+                height: 90vh;
+                div {
+                    .carousel-item {
+                        height: 100%;
+                        margin-top: -8vh;       
+                        .carousel-caption {
+                            h2 {
+                                color: #fff;
+                                font-size: 3rem;
+                                margin: -8vh 0 0 0;
+                                text-shadow: 0px 0px 20px var(--var-color);
+                                filter: blur(0.5px) brightness(1);
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 1.5rem;
+                                text-shadow: 0px 0px 20px var(--var-color);
+                                filter: blur(0.5px) brightness(1);
+                            }
+                        }
+                        img{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .carousel-inner {
+                    height: 100%;
+                }
+                .carousel-indicators {
+                    button {
+                        margin-top: -8vh;
+                    }
+                }
+            }
+        }
+    }
     .main-diseños {
         .info-diseños {
             div {

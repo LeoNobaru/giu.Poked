@@ -20,12 +20,15 @@ footer {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             gap: 30px;
-            li {
-                
+            li {               
                 a {
                     color: #fff;
                     font-size: 1rem;
                     text-decoration: none;
+                    &:hover {
+                        color: #fffc;
+                        border-bottom: 1px solid #fffc;
+                    }
                 }
             }
         }

@@ -530,6 +530,10 @@ footer nav .rrss li a {
   font-size: 1rem;
   text-decoration: none;
 }
+footer nav .rrss li a:hover {
+  color: #fffc;
+  border-bottom: 1px solid #fffc;
+}
 footer .newsletter {
   margin-top: 20px;
   height: 15%;
@@ -705,6 +709,36 @@ footer .copyright p {
   main .section-carousel {
     padding-top: 80px;
   }
+  main .section-carousel .carousel {
+    background: #010002;
+    height: 92vh;
+  }
+  main .section-carousel .carousel div .carousel-item {
+    height: 100%;
+    margin-top: -8vh;
+  }
+  main .section-carousel .carousel div .carousel-item .carousel-caption h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin: -8vh 0 0 0;
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(0.5px) brightness(1);
+  }
+  main .section-carousel .carousel div .carousel-item .carousel-caption p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(0.5px) brightness(1);
+  }
+  main .section-carousel .carousel div .carousel-item img {
+    opacity: 0.5;
+  }
+  main .section-carousel .carousel .carousel-inner {
+    height: 100%;
+  }
+  main .section-carousel .carousel .carousel-indicators button {
+    margin-top: -8vh;
+  }
   main .grid-container-sN {
     margin: 20px 0;
     display: grid;
@@ -763,7 +797,7 @@ footer .copyright p {
   main .grid-container-pF .grid-item-pF img {
     object-fit: cover;
     width: 80%;
-    height: 90%;
+    height: 85%;
     border: inset #D6F9FF;
   }
   main .grid-container-pF .pF-info {
@@ -862,6 +896,11 @@ footer .copyright p {
   }
   footer .marcas ul li {
     margin: auto 0;
+  }
+  footer .copyright {
+    display: flex;
+    padding: 10px 5vw;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1441px) {
@@ -891,6 +930,36 @@ footer .copyright p {
   main .section-carousel {
     padding-top: 80px;
   }
+  main .section-carousel .carousel {
+    background: #010002;
+    height: 92vh;
+  }
+  main .section-carousel .carousel div .carousel-item {
+    height: 100%;
+    margin-top: -8vh;
+  }
+  main .section-carousel .carousel div .carousel-item .carousel-caption h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin: -8vh 0 0 0;
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(0.5px) brightness(1);
+  }
+  main .section-carousel .carousel div .carousel-item .carousel-caption p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(0.5px) brightness(1);
+  }
+  main .section-carousel .carousel div .carousel-item img {
+    opacity: 0.5;
+  }
+  main .section-carousel .carousel .carousel-inner {
+    height: 100%;
+  }
+  main .section-carousel .carousel .carousel-indicators button {
+    margin-top: -8vh;
+  }
   main .grid-container-sN {
     margin: 20px 0;
     display: grid;
@@ -907,7 +976,7 @@ footer .copyright p {
   }
   main .grid-container-sN .grid-item-sN img {
     object-fit: cover;
-    width: 80%;
+    width: 60%;
     height: 90%;
     border: inset #D6F9FF;
   }
@@ -922,7 +991,7 @@ footer .copyright p {
   }
   main .grid-container-sN .sN-info p {
     color: #fffe;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   main .grid-container-sN .grid-item-sN:first-child {
     grid-column: 1/2;
@@ -949,7 +1018,7 @@ footer .copyright p {
   main .grid-container-pF .grid-item-pF img {
     object-fit: cover;
     width: 80%;
-    height: 90%;
+    height: 75%;
     border: inset #D6F9FF;
   }
   main .grid-container-pF .pF-info {
@@ -964,7 +1033,7 @@ footer .copyright p {
     min-height: 50%;
   }
   main .grid-container-pF .pF-info .accordion .accordion-item h4 .accordion-button {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   main .grid-container-pF .pF-info .accordion .accordion-item div div p {
     font-size: 1.2rem;
@@ -1049,7 +1118,13 @@ footer .copyright p {
   footer .marcas ul li {
     margin: auto 0;
   }
+  footer .copyright {
+    display: flex;
+    padding: 10px 5vw;
+    justify-content: space-between;
+  }
 }
+/* Falta Celular en horizontal */
 @media screen and (max-height: 450px) {
   .irArriba {
     height: 10vh;
@@ -1075,6 +1150,40 @@ footer .copyright p {
   }
   header nav .nav-container-mobile .nav-menu-mobile .nav-div-mobile li .submenu-display-mobile {
     display: none;
+  }
+
+  main .section-carousel {
+    padding-top: 50px;
+  }
+  main .section-carousel .carousel {
+    background: #010002;
+    height: 90vh;
+  }
+  main .section-carousel .carousel div .carousel-item {
+    height: 100%;
+    margin-top: -8vh;
+  }
+  main .section-carousel .carousel div .carousel-item .carousel-caption h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin: -8vh 0 0 0;
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(0.5px) brightness(1);
+  }
+  main .section-carousel .carousel div .carousel-item .carousel-caption p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(0.5px) brightness(1);
+  }
+  main .section-carousel .carousel div .carousel-item img {
+    opacity: 0.5;
+  }
+  main .section-carousel .carousel .carousel-inner {
+    height: 100%;
+  }
+  main .section-carousel .carousel .carousel-indicators button {
+    margin-top: -8vh;
   }
 
   .main-diseños .info-diseños div i ul {
