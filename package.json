@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoNobaru/giu.Poked.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeoNobaru/giu.Poked/issues"
+  },
+  "homepage": "https://github.com/LeoNobaru/giu.Poked#readme",
   "description": ""
 }
