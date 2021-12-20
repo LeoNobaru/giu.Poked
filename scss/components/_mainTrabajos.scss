@@ -1,0 +1,56 @@
+/* Main Trabajos */
+
+.main-trabajos {
+    padding-top: 38px;
+    section {
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: nth($colors , 6);
+            @extend %text-tittle;
+        }
+        .grid-item-trabajos:first-child {
+            grid-column: 1/2;
+            grid-template-rows: 1/2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }         
+    }
+        .grid-container-opiniones {
+            padding: 0 10px 50px 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            .grid-item-opiniones:first-child {
+                grid-column: 1/2;
+                grid-row: 1/2;               
+            }
+            .grid-item-opiniones {
+                background-color: #48128171;
+                border-radius: 4px;
+                color: darken(nth($colors, 6),10%);
+                text-decoration: none;
+                overflow: hidden;
+                border: 3px inset #d2bdff;
+                img {
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+                div {
+                    width: 100%;
+                    height: 30%;
+                    color: #fff;
+                    padding: 1% 1%;
+                    p {
+                        padding-top: 1%;
+                    }
+                }
+                
+            }
+        }
+    }
